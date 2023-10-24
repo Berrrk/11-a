@@ -5,36 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>11-A Sınıf Sitesi - Anasayfa</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <div id="container"> <!-- Tüm sayfa içeriğini bir ana container içine yerleştirin -->
-        <h1>11-A Sınıf Sitesi</h1>
-        <nav id="Site_Navbar" class="Section">
-            <ul>
-                <li class="navbar_item" id="navbar_item_anasayfa"><a href="index.html">Anasayfa</a></li>
-                <li class="navbar_item" id="navbar_item_odevler"><a href="odevler.html">Ödevler</a></li>
-                <li class="navbar_item" id="navbar_item_duyurular"><a href="duyurular.html">Duyurular</a></li>
-                <li class="navbar_item" id="navbar_item_bsm"><a href="bsm.html">Büyük Sınıf Meclisi</a></li>
-            </ul>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">11-A Sınıf Sitesi</h1>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="odevler.html">Ödevler</a></li>
+                    <li><a href="duyurular.html">Duyurular</a></li>
+                    <li><a href="bsm.html">Büyük Sınıf Meclisi</a></li>
+                </ul>
+                
+            </div>
         </nav>
-        <header id="Site_Header" class="Section">
-            <h1 class="max-h" id="max-h_HeaderMain">11-A Sınıf Sitesi</h1>
-            <br>
-            <p id="headerMain_p">Kocaman sinek girdi içeri</p>
-        </header>
-        <section id="Site_Main" class="Section">
+    </header>
+    <section id="main-content">
+        <div class="container">
+            <h1>Burası 11-A Sınıfının Resmi Sitesi</h1>
+            <p id="index_maincontent">Selam. Açıkçası açıklama yapmanın bir anlamı yok. Sınıfta lazım olan zart zurtlar var burada. Birde işte ödevleri not almayı bilmediğiniz için buraya ekliyoruz. O kadar. 
+            </p>
             <div class="discord-container">
                 <h2>Discord Sunucusu</h2>
-                <div class="discord-invite">
-                    <p>Sınıfın Resmi Discord Sunucusuna Katılmalısın!</p>
-                    <a href="https://discord.gg/Yu8R33yKVF" class="discord-button">Hadi Gidelim!</a>
-                </div>
+                <p>Sınıfın Resmi Discord Sunucusuna Katılmalısın!</p>
+                <a href="https://discord.gg/Yu8R33yKVF" target="_blank" class="discord-button">Hadi Gidelim!</a>
             </div>
-        </section>
-        <footer id="Site_Footer" class="Section">
+        </div>
+    </section>
+    <footer>
+        <div class="container">
             <p>Efe Keten Oyun Salonu</p>
-        </footer>
-    </div>
-    <script src="script.js"></script>
+            <p>Bu site 11-A sınıfının ihtiyaçları dahilinde tasarlanmış ve kullanıma açılmıştır. Hakları -saklayacak yerimiz olmadığından- saklayamıyoruz. </p>
+            <p>Site v1.0.3</p>
+        </div>
+    </footer>
 </body>
 </html>

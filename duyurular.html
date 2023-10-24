@@ -7,34 +7,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container"> <!-- Tüm sayfa içeriğini bir ana container içine yerleştirin -->
-        <h1>11-A Sınıf Sitesi</h1>
-        <nav id="Site_Navbar" class="Section">
-            <ul>
-                <li class="navbar_item" id="navbar_item_anasayfa"><a href="index.html">Anasayfa</a></li>
-                <li class="navbar_item" id="navbar_item_odevler"><a href="odevler.html">Ödevler</a></li>
-                <li class="navbar_item" id="navbar_item_duyurular"><a href="duyurular.html">Duyurular</a></li>
-                <li class="navbar_item" id="navbar_item_bsm"><a href="bsm.html">Büyük Sınıf Meclisi</a></li>
-            </ul>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">11-A Sınıf Sitesi</h1>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="odevler.html">Ödevler</a></li>
+                    <li><a href="duyurular.html">Duyurular</a></li>
+                    <li><a href="bsm.html">Büyük Sınıf Meclisi</a></li>
+                </ul>
+            </div>
         </nav>
-        <header id="Site_Header" class="Section">
-            <h1 class="max-h" id="max-h_HeaderMain">Duyurular</h1>
-            <br>
-            <p id="headerMain_p">Duyuru olarak bir duyuru yok. Ancak Haftaya, yani 30 ekim falan herhalde bilmiyorum. Sınavlar başlıyor işte.</p>
-        </header>
-        <section id="Site_Main" class="Section">
+    </header>
+    <section id="main-content">
+        <div class="container">
+            <h1>Duyurular</h1>
+            <p>Burası sınıf geneline bir bilgiyi duyurmak için kullanılıyor. (başka ne olacaktı zaten)</p>
+            <div class="duyuru_container">
+                <h2>Duyuru</h2>
+                <h3>Site Güncellemeleri</h3>
+                <p>11-A sınıf sitesi v1.0.3 sürümüne geçiş yaptı. İşte bu sürümdeki yenilikler:</p>
+                <ul>
+                    <li>Tasarım baştan aşağı değiştirildi.</li>
+                    <li>Bazı yazılar değiştirildi ve düzeltildi.</li>
+                    <li>Efe sonunda ETS2 alabildi.</li>
+                    <li>Discord sunucusuna katılmak istendiğinde, artık, yan sekmede açılıyor.</li>
+                </ul>
+            </div>
+            <div class="duyuru_container">
+                <h2>Duyuru</h2>
+                <h3>Sınavlar Hakkında</h3>
+                <p>Yakın zamanda sınav tarihleri paylaşıldı ve 30 ekimden sonra sınavlar başlıyor. Sınav programı okulun instagram hesabı ve internet sitesinde paylaşıldı.</p>
+                
+            </div>
+            <div class="duyuru_container">
+                <h2>Duyuru</h2>
+                <h3>Sınavlar Hakkında</h3>
+                <p>Salı günü (24.10.2023) Matematik öğretmeni sınav konuları verdi. İşlediğimiz yere kadar (asal sayılar hariç) sınavda çıkıyor. <br><br> Felsefe öğretmeni de matematik öğretmeni gibi, kendi dersi için, aynı şeyleri söyledi</p>
+                
+            </div>
+            <div class="duyuru_container">
+                <h2>Duyuru</h2>
+                <h3>Sınavlar Hakkında</h3>
+                <p>Yakında bazı derslere ait çalışma kağıtları paylaşılacaktır. (pdf formatında)</p>
+                
+            </div>
             <div class="discord-container">
                 <h2>Discord Sunucusu</h2>
-                <div class="discord-invite">
-                    <p>Sınıfın Resmi Discord Sunucusuna Katılmalısın!</p>
-                    <a href="https://discord.gg/Yu8R33yKVF" class="discord-button">Hadi Gidelim!</a>
-                </div>
+                <p>Sınıfın Resmi Discord Sunucusuna Katılmalısın!</p>
+                <a href="https://discord.gg/Yu8R33yKVF" target="_blank" class="discord-button">Hadi Gidelim!</a>
             </div>
-        </section>
-        <footer id="Site_Footer" class="Section">
-            <p>Efe Keten Pide Salonu</p>
-        </footer>
-    </div>
-    <script src="script.js"></script>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Efe Keten Oyun Salonu</p>
+            <p>Bu site 11-A sınıfının ihtiyaçları dahilinde tasarlanmış ve kullanıma açılmıştır. Hakları -saklayacak yerimiz olmadığından- saklayamıyoruz. </p>
+            <p>Site v1.0.3</p>
+        </div>
+    </footer>
 </body>
 </html>

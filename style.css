@@ -1,121 +1,219 @@
-body {
-    text-align: center;
-    font-family: 'Helvetica', sans-serif; /* Apple benzeri bir yazı tipi kullanın */
-    background-color: #222; /* Koyu arka plan rengi */
-    color: #fff; /* Beyaz metin rengi */
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-#container {
-    max-width: 1200px; /* Sayfa içeriğini maksimum genişlikte sınırlayın */
-    margin: 0 auto; /* Sayfayı yatayda ortala */
-    padding: 20px; /* Yanlardan boşluk ekleyin */
+.duyuru_container ul {
+    padding-left: 40px; /* Liste içeriğini içeriye kaydırır */
 }
-
-ul {
-    list-style-type: none;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+.discord-container {
+    margin-top: 20px; /* Yukarı boşluk ekler */
 }
 
-li {
+#index_maincontent {
+    width: 600px;
+}
+
+#main-content h1 {
+    margin-bottom: 20px; /* H1 başlıkları ile diğer içerikler arasına boşluk ekler */
+}
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
-li a {
+nav ul li a {
     text-decoration: none;
-    padding: 8px 20px;
-    background-color: #3498db; /* Menü linklerinin arka plan rengi */
-    border-radius: 10px;
-    color: #fff; /* Beyaz metin rengi */
-    transition: all 0.3s;
+    color: #fff;
+    font-weight: bold;
 }
 
-.Section {
-    padding: 20px;
+/* Main Content Styles */
+#main-content {
+    flex: 1;
+    padding: 40px 0;
 }
 
-/* Ekran genişliği 768 piksel veya daha küçük olduğunda stil değişiklikleri yap */
-@media (max-width: 768px) {
-    li {
-        display: block;
-        margin: 0;
-        text-align: center;
-    }
-    li a {
-        display: block;
-        margin: 10px 0;
-        background-color: #e74c3c; /* Mobil cihazlarda menü linklerinin arka plan rengi */
-    }
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
 .discord-container {
-    background-color: #7289DA; /* Discord'un rengi */
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.discord-invite {
-    background-color: #5865F2; /* Discord'un farklı bir rengi */
-    padding: 20px;
-    border-radius: 10px;
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .discord-button {
-    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
     padding: 10px 20px;
-    background-color: #7289DA;
     border: none;
     border-radius: 5px;
-    color: #fff;
     text-decoration: none;
-    transition: all 0.3s;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .discord-button:hover {
-    background-color: #5865F2;
+    background-color: #1f77c3;
 }
 
-#odev_table {
-    margin: 20px 0; /* Tablo ile diğer içerikler arasına boşluk ekler */
-    background-color: #333; /* Tablo arka plan rengi */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#table_odev {
+/* Table Styles */
+table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
-#table_odev th, #table_odev td {
+table th, table td {
+    border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
-    border: 1px solid #fff; /* Tablo hücre sınırlarını belirgin hale getirir */
-    color: #fff; /* Tablo metin rengi */
 }
 
-#table_odev th {
-    background-color: #444; /* Tablo başlık arka plan rengi */
+table th {
+    background-color: #3498db;
+    color: #fff;
 }
 
-#table_odev tr:nth-child(even) {
-    background-color: #555; /* Çift sıraların arka plan rengi */
+table th, table td ul {
+    list-style-type: square;
+    margin-left: 20px;
 }
-#countdown-container {
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    color: #fff; /* Beyaz metin rengi */
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
 }
 
-#countdown-text {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Arial', sans-serif;
-    margin: 20px 0;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    #index_maincontent {
+        width: 400px;
+    }
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .discord-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .discord-button {
+        padding: 8px 16px;
+    }
+    #index_maincontent {
+        width: 200px;
+    }
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+.duyuru_container {
+    max-height: 400px; /* Duyuru container'ının maksimum yüksekliği */
+    overflow-y: auto;  /* Yatay kaydırma çubuğunu görünür kılar */
+}
+
 
 #countdown {
-    font-size: 48px;
-    font-family: 'Digital', sans-serif;
-    margin: 10px 0;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* Duyuru Container */
+.duyuru_container {
+    background-color: #f2f2f2; /* Duyuru arka plan rengi */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Duyurular arasına boşluk ekler */
+}
+
+.duyuru_container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.duyuru_container p {
+    font-size: 16px;
+    color: #333; /* Duyuru metin rengi */
+}
+
+/* Duyurular arasındaki boşluğu ayarlayın */
+.duyuru_container + .duyuru_container {
+    margin-top: 20px;
 }
