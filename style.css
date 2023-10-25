@@ -3,16 +3,28 @@ p {
     margin-bottom: 20px;
 }
 .duyuru_container ul {
-    padding-left: 40px; /* Liste içeriğini içeriye kaydırır */
+    padding-left: 40px; 
 }
-/* Reset CSS */
+
+#dersnotlari_a a {
+    color: yellow;
+}
+
+#notlar-container {
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    background-color: #1f77c3;
+    color:#f2f2f2
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .discord-container {
-    margin-top: 20px; /* Yukarı boşluk ekler */
+    margin-top: 20px; 
 }
 
 #index_maincontent {
@@ -20,7 +32,7 @@ p {
 }
 
 #main-content h1 {
-    margin-bottom: 20px; /* H1 başlıkları ile diğer içerikler arasına boşluk ekler */
+    margin-bottom: 20px; 
 }
 .logo {
     font-size: 36px;
@@ -30,7 +42,6 @@ p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -46,7 +57,6 @@ body {
     height: auto;
 }
 
-/* Header Styles */
 header {
     background-color: #3498db;
     color: #fff;
@@ -72,7 +82,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Main Content Styles */
 #main-content {
     flex: 1;
     padding: 40px 0;
@@ -111,7 +120,6 @@ h2 {
     background-color: #1f77c3;
 }
 
-/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -134,7 +142,6 @@ table th, table td ul {
     margin-left: 20px;
 }
 
-/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -144,7 +151,6 @@ footer {
     width: 100%;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
@@ -184,8 +190,8 @@ footer {
     }
 }
 .duyuru_container {
-    max-height: 400px; /* Duyuru container'ının maksimum yüksekliği */
-    overflow-y: auto;  /* Yatay kaydırma çubuğunu görünür kılar */
+    max-height: 400px; 
+    overflow-y: auto;  
 }
 
 
@@ -194,13 +200,12 @@ footer {
     font-weight: bold;
 }
 
-/* Duyuru Container */
 .duyuru_container {
-    background-color: #f2f2f2; /* Duyuru arka plan rengi */
+    background-color: #f2f2f2; 
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Duyurular arasına boşluk ekler */
+    margin-bottom: 20px; 
 }
 
 .duyuru_container h2 {
@@ -210,10 +215,10 @@ footer {
 
 .duyuru_container p {
     font-size: 16px;
-    color: #333; /* Duyuru metin rengi */
+    color: #333; 
 }
 
-/* Duyurular arasındaki boşluğu ayarlayın */
+
 .duyuru_container + .duyuru_container {
     margin-top: 20px;
 }
