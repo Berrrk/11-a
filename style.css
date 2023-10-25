@@ -17,7 +17,7 @@ p {
     -webkit-transition: all 5s;
     transition: all 5s;
 }
-#notts{
+#notts:hover{
     background-color: rgb(255, 255, 0);
 }
 
