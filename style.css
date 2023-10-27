@@ -49,18 +49,11 @@ p {
 }
 
 #notlar-container {
-    padding: 30px;
-    text-align: center;
-    width: 400px;
-    font-size: 25px;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 5s;
     transition: all 5s;
 }
 
 #notlar-container:hover {
-    background-color: red;
     box-shadow: 0 0 100px rgba(255, 0, 0, 10);
 }
 
