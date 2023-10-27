@@ -15,7 +15,7 @@ p {
 }
 
 #dersnotlari_a a {
-    color: red;
+    color: yellow;
 }
 
 #notts{
@@ -23,29 +23,7 @@ p {
     transition: all 5s;
 }
 #notts:hover{
-    color: red;
-}
-
-#cumhuriyet_div {
-    text-align: center;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 10);
-}
-
-#cumhuriyet_div h1 {
-    color: black;
-    transition: all 5s;
-    font-weight: 900;
-}
-
-#cumhuriyet_div h1:hover{
-    text-shadow: 0 0 10px rgba(255, 0, 0, 1);
-    
-}
-
-#cumhuriyet_div p {
-    font-weight: 900;
-    color: black;
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    color: rgb(255, 255, 0);
 }
 
 #notlar-container {
@@ -60,8 +38,7 @@ p {
 }
 
 #notlar-container:hover {
-    background-color: red;
-    box-shadow: 0 0 100px rgba(255, 0, 0, 10);
+    background-color: rgb(255, 255, 0);
 }
 
 * {
@@ -96,18 +73,6 @@ body {
     background-color: #f2f2f2;
 }
 
-#yil100{
-    width: 450px;
-    height: 250px;
-    box-shadow: 0 10 100px rgba(0, 0, 0, 1);
-    
-}
-
-a {
-    color: black;
-    text-decoration: underline;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -116,7 +81,7 @@ a {
 }
 
 header {
-    background-color: rgb(221,26,50);
+    background-color: #3498db;
     color: #fff;
     padding: 20px 0;
 }
@@ -163,8 +128,8 @@ h2 {
 }
 
 .discord-button {
-    background-color: red;
-    color: white;
+    background-color: #3498db;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -175,10 +140,8 @@ h2 {
 }
 
 .discord-button:hover {
-    background-color: #f03636;
+    background-color: #1f77c3;
 }
-
-
 
 table {
     width: 100%;
@@ -193,7 +156,7 @@ table th, table td {
 }
 
 table th {
-    background-color: red;
+    background-color: #3498db;
     color: #fff;
 }
 
@@ -203,7 +166,7 @@ table th, table td ul {
 }
 
 footer {
-    background-color: rgb(51, 43, 44);
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -223,22 +186,11 @@ footer {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    #yil100 {
-        width: 300px;
-        height: 150px;
-    }
-    #kutluolsun {
-        font-size: 20px;
-    }
 }
 
 @media (max-width: 480px) {
     h1 {
         font-size: 24px;
-    }
-
-    #kutluolsun {
-        font-size: 18px;
     }
 
     .discord-container {
@@ -259,23 +211,11 @@ footer {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    #yil100 {
-        width: 250px;
-        height: 100px;
-    }
 }
 .duyuru_container {
     max-height: 400px; 
     overflow-y: auto;  
-    transition: all 2s;
 }
-
-.duyuru_container:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.35);
-    
-}
-
 
 
 #countdown {
@@ -284,10 +224,10 @@ footer {
 }
 
 .duyuru_container {
-    background-color: #ffffff; 
+    background-color: #f2f2f2; 
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; 
 }
 
