@@ -14,10 +14,6 @@ p {
     padding-left: 40px; 
 }
 
-#dersnotlari_a a {
-    color: red;
-}
-
 #notts{
     -webkit-transition: all 5s;
     transition: all 5s;
@@ -44,15 +40,6 @@ p {
     font-weight: 900;
     color: black;
     text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-}
-
-#notlar-container {
-    -webkit-transition: all 5s;
-    transition: all 5s;
-}
-
-#notlar-container:hover {
-    box-shadow: 0 0 100px rgba(255, 0, 0, 10);
 }
 
 * {
