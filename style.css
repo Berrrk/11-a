@@ -22,9 +22,7 @@ p {
     -webkit-transition: all 5s;
     transition: all 5s;
 }
-#notts:hover{
-    color: red;
-}
+
 
 #cumhuriyet_div {
     text-align: center;
