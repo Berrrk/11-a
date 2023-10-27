@@ -103,6 +103,15 @@ body {
     
 }
 
+#c_foto {
+    width: 130px;
+    height: 75px;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border: 2px solid black;
+}
+
 a {
     color: black;
     text-decoration: underline;
@@ -116,7 +125,7 @@ a {
 }
 
 header {
-    background-color: rgb(221,26,50);
+    background-color: rgb(190,22,35);
     color: #fff;
     padding: 20px 0;
 }
@@ -229,6 +238,14 @@ footer {
     }
     #kutluolsun {
         font-size: 20px;
+    }
+    #c_foto {
+        width: 100px;
+        height: 45px;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        border: 2px solid black;
     }
 }
 
