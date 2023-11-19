@@ -5,11 +5,25 @@ document.addEventListener("DOMContentLoaded", function () {
         var now = new Date().getTime();
         var distance = targetDate - now;
 
+
+
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+        if(length(String(days)) === 1) {
+            days = "0" + days;
+        }
+        if(length(String(hours)) === 1) {
+            days = "0" + days;
+        }
+        if(length(String(minutes)) === 1) {
+            days = "0" + days;
+        }
+        if(length(String(seconds)) === 1) {
+            days = "0" + days;
+        }
         document.getElementById("countdown").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
 
         if (distance < 0) {
