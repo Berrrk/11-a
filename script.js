@@ -12,17 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        if(length(String(days)) === 1) {
+        if(days < 10) {
             days = "0" + days;
         }
-        if(length(String(hours)) === 1) {
-            days = "0" + days;
+        if(hours < 10) {
+            hours = "0" + hours;
         }
-        if(length(String(minutes)) === 1) {
-            days = "0" + days;
+        if(minutes < 10 ) {
+            minutes = "0" + minutes;
         }
-        if(length(String(seconds)) === 1) {
-            days = "0" + days;
+        if(seconds < 10) {
+            seconds = "0" + seconds;
         }
         document.getElementById("countdown").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
 
