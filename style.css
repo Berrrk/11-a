@@ -1,107 +1,178 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #0d1117;
-    font-family: 'Noto Sans', sans-serif;
+:root {
+    --MainFontFamily: 'Inter', sans-serif;
 }
-
-.countdown-container {
+body{
+    font-family: var(--MainFontFamily);
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000;
+    background-color: orange;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-weight: 600;
     text-align: center;
 }
 
+img#wumpus{
+    margin: 100px auto 100px auto;
+}
+
 h1 {
-    font-size: 42px;
-    font-weight: 900;
-    text-shadow: 0px 0px 100px #fff;
-    margin-bottom: 20px;
-    opacity: 0%;
-    transition: 30s;
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
 }
 
-h1:hover{
-    opacity: 100%;
+img#james {
+    width: 600px;
+    height:800px;
+    border-radius: 20px;
 }
 
-#countdown {
-    color: #5865F2;
-    border: 2px solid 1px #333;
-    text-shadow: 0px 0px 101.0999984741211px #5865F2;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    transition: 3s;
-    animation: countdownAnimation 30s linear infinite;
+p#p3 {
+    margin-top: 100px;
+    margin-bottom: 400px;
 }
 
-@keyframes countdownAnimation {
-    0% {
-        transform: scale(1);
-        text-shadow: 0px 0px 101.0999984741211px #5865F2;
-        color: #5865F2;
-    }
-    10%{
-        color: #9065F2;
-    }
-    20%{
-        color: #9035F2;
-    }
-    30%{
-        color: #ff65A2;
-    }
-    40%{
-        color: #9065F2;
-    }
-    50% {
-        transform: scale(0.97);
-        text-shadow: 0px 0px 101.0999984741211px #fff;
-    }
-    60%{
-        color: #fff;
-    }
-    70%{
-        color: #9035F2;
-    }
-    80%{
-        color: #9035F2;
-    }
-    90%{
-        color: #9065F2;
-    }
-    100% {
-        transform: scale(1);
-        text-shadow: 0px 0px 101.0999984741211px #5865F2;
-    }
+p#p4 {
+    margin-top: 300px;
 }
 
+img#berkvemustafa {
+    margin-top: 70px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 70px 70px white;
+}
 
-@media only screen and (max-width: 768px) {
-    .countdown-container {
-        width: 80%; 
-    }
+section#discord {
+    background-color: darkorange;
+    width: fit-content;
+    margin: 150px auto 0 auto;
+    padding: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
 
-    h1{
-        font-size: 24px;
-    }
-    #countdown{
-        font-size: 68px;
-    }
+section#discord h1{
+    text-shadow: 0px 0px 80px black;
+}
+
+section#discord button{
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: orange;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section#discord button:hover{
+    border: 1px solid orange;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 2s;
+    box-shadow: 0px 0px 1000px 1000px black;
 }
 
 
-@media only screen and (max-width: 480px) {
-    .countdown-container {
-        width: 90%; 
-    }
+section#github {
+    background-color: darkorange;
+    width: fit-content;
+    margin: 150px auto 150px auto;
+    padding: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
 
+section#github h1{
+    text-shadow: 0px 0px 80px black;
+}
+
+section#github button{
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: orange;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section#github button:hover{
+    border: 1px solid orange;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 2s;
+    box-shadow: 0px 0px 1000px 1000px black;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 20px;
+    }
     h1 {
-        font-size: 20px; 
+        font-size: 50px;
     }
-
-    #countdown {
-        font-size: 52px; 
+    img#wumpus{
+        margin: 100px auto 100px auto;
+        width: 400px;
+        height: 400px;
+    }
+    img#james {
+        margin-bottom: 100px;
+        width: 300px;
+        height:400px;
+    }
+    p#p3 {
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+    p#p4 {
+        margin-top: 150px;
+    }
+    img#berkvemustafa {
+        width: 400px;
+        height: 250px;
+        margin-top: 70px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 70px 70px white;
+    }
+    section#discord {
+        width: 400px;
+        margin: 75px auto 0 auto;
+        padding: 20px;
+    }
+    section#discord h1{
+        font-size: 50px;
+    }
+    section#discord button{
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    section#github {
+        width: 400px;
+        margin: 75px auto 75px auto;
+        padding: 20px;
+    }
+    section#github h1{
+        font-size: 50px;
+    }
+    section#github button{
+        padding: 10px 20px;
+        font-size: 20px;
     }
 }
