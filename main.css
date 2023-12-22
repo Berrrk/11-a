@@ -153,3 +153,47 @@ section#odevler {
     border: 1px dotted black;
     font-weight: 500;
 }
+
+#img{
+    display: none;
+}
+
+@media only screen and (max-width: 720px) {
+    #logo {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #logo {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .main{
+        opacity: 0;
+        display: none;
+    }
+
+    #img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #img p,h1 {
+        font-size: 7px;
+    }
+
+    #img img{
+        width: 150px;
+        height: 100px;
+    }
+
+}

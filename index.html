@@ -27,7 +27,6 @@
             max-width: 600px;
             width: 100%;
             animation: fadeIn 0.5s;
-            
         }
         .modal p, .modal h1{
             margin: 15px;
@@ -54,74 +53,106 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1 class="display bolder" id="logo">Workstation Beta</h1>
-        <h1 class="title1 bolder">Merhaba!</h1>
-        <p class="body2">Hoşgeldin, bu site geçici olarak var olan bir site olduğunu bil. Yakın bir zamanda asıl site yayına geçecektir.</p>
-    </header>
-
-    <section id="odevler">
-        <h1 class="title1 bolder">Ödevler ve Duyurular</h1>
-        <p class="body2">Ödevlerinizi ve duyuruları buradan görebilirsiniz.</p>
-        <div id="odev_content">
-            <div class="odev">
-                <h1 class="title3 bolder">Tarih</h1>
-                <p class="body2">Tarih Sınav Konuları</p>
-                <a href="#" class="button odev-goruntule-btn" data-odev="tarih">Ödevi Görüntüle</a>
+    <div class="main">
+        <header>
+            <h1 class="display bolder" id="logo">Workstation Beta</h1>
+            <h1 class="title1 bolder">Merhaba!</h1>
+            <p class="body2">Hoşgeldin, bu site geçici olarak var olan bir site olduğunu bil. Yakın bir zamanda asıl site yayına geçecektir.</p>
+        </header>
+    
+        <section id="odevler">
+            <h1 class="title1 bolder">Ödevler ve Duyurular</h1>
+            <p class="body2">Ödevlerinizi ve duyuruları buradan görebilirsiniz.</p>
+            <div id="odev_content">
+                <div class="odev">
+                    <h1 class="title3 bolder">Tarih</h1>
+                    <p class="body2">Tarih Sınav Konuları</p>
+                    <a href="#" class="button odev-goruntule-btn" data-odev="tarih">Ödevi Görüntüle</a>
+                </div>
+    
+                <div class="odev">
+                    <h1 class="title3 bolder">Felsefe</h1>
+                    <p class="body2">Felsefe Sınav Konuları</p>
+                    <a href="#" class="button odev-goruntule-btn" data-odev="felsefe">Ödevi Görüntüle</a>
+                </div>
+                <div class="odev">
+                    <h1 class="title3 bolder">Biyoloji</h1>
+                    <p class="body2">Biyoloji Sınav Konuları</p>
+                    <a href="#" class="button odev-goruntule-btn" data-odev="biyoloji">Ödevi Görüntüle</a>
+                </div>
+                <div class="odev">
+                    <h1 class="title3 bolder">Din</h1>
+                    <p class="body2">Din Sınav Konuları</p>
+                    <a href="#" class="button odev-goruntule-btn" data-odev="din">Ödevi Görüntüle</a>
+                </div>
+                <div class="odev">
+                    <h1 class="title3 bolder">Türk Dili ve Edebiyatı</h1>
+                    <p class="body2">T.D.E Sınav Konuları</p>
+                    <a href="#" class="button odev-goruntule-btn" data-odev="edebiyat">Ödevi Görüntüle</a>
+                </div>
             </div>
-
-            <div class="odev">
-                <h1 class="title3 bolder">Felsefe</h1>
-                <p class="body2">Felsefe Sınav Konuları</p>
-                <a href="#" class="button odev-goruntule-btn" data-odev="felsefe">Ödevi Görüntüle</a>
-            </div>
-            <div class="odev">
-                <h1 class="title3 bolder">Biyoloji</h1>
-                <p class="body2">Biyoloji Sınav Konuları</p>
-                <a href="#" class="button odev-goruntule-btn" data-odev="biyoloji">Ödevi Görüntüle</a>
+        </section>
+    
+        <!-- Modal Overlay -->
+        <div class="overlay" id="overlay-tarih">
+            <div class="modal" id="modal-tarih">
+                <span class="close-btn" onclick="closeModal('tarih')">&times;</span>
+                <h1 class="title2 bolder">Tarih Sınavı</h1>
+                <p class="body1"><strong>Tarih:</strong> 19.12.2023</p>
+                <p class="body1">34'den 74'e kadar.</p>
+                <ul class="body1">
+                    <li>Zitvatorok Antlaşması: paragraf sorusu, ilgili her şeyi öğren.</li>
+                    <li>Küçük Kaynarca Antlaşmasının(1774) sonuçları. Maddelerine çalış. Ekonomik sonuçları...</li>
+                    <li>Rönesans'ın nedenlerı (5 tane)</li>
+                    <li>Westphalia Antlaşmasının sonuçları (3 tane)</li>
+                    <li>Koçibey Risalesine göre, yeniçeri ocağının bozulma nedenleri.</li>
+                    <li>Rönesans dönemi fikir adamlarından iki tanesini, eseriyle birlikte yaz.</li>
+                    <li>Tımar sistemi bozumla nedenlerinden 3 tane yaz.</li>
+                    <li>Zitvatorok Antlaşması ile ilgili paragrafı yorumlayın.</li>
+                    <li>Küçük kaynarca Antlaşmasının dini sonuçlarını yazıp değerlendiriniz.</li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Modal Overlay -->
-    <div class="overlay" id="overlay-tarih">
-        <div class="modal" id="modal-tarih">
-            <span class="close-btn" onclick="closeModal('tarih')">&times;</span>
-            <h1 class="title2 bolder">Tarih Sınavı</h1>
-            <p class="body1"><strong>Tarih:</strong> 19.12.2023</p>
-            <p class="body1">34'den 74'e kadar.</p>
-            <ul class="body1">
-                <li>Zitvatorok Antlaşması: paragraf sorusu, ilgili her şeyi öğren.</li>
-                <li>Küçük Kaynarca Antlaşmasının(1774) sonuçları. Maddelerine çalış. Ekonomik sonuçları...</li>
-                <li>Rönesans'ın nedenlerı (5 tane)</li>
-                <li>Westphalia Antlaşmasının sonuçları (3 tane)</li>
-                <li>Koçibey Risalesine göre, yeniçeri ocağının bozulma nedenleri.</li>
-                <li>Rönesans dönemi fikir adamlarından iki tanesini, eseriyle birlikte yaz.</li>
-                <li>Tımar sistemi bozumla nedenlerinden 3 tane yaz.</li>
-                <li>Zitvatorok Antlaşması ile ilgili paragrafı yorumlayın.</li>
-                <li>Küçük kaynarca Antlaşmasının dini sonuçlarını yazıp değerlendiriniz.</li>
-            </ul>
+    
+        <div class="overlay" id="overlay-felsefe">
+            <div class="modal" id="modal-felsefe">
+                <span class="close-btn" onclick="closeModal('felsefe')">&times;</span>
+                <h1 class="title2 bolder">Felsefe Sınavı</h1>
+                <p class="body1"><strong>Tarih:</strong> 19.12.2023</p>
+                <p class="body1">Kendini tanımlayan bir filozof sözü, M.Ö 6. yy - M.S 2. yy felsefesinin ayırt edici özelliklerinden başlıyor, M.S 2. yy - M.S 15. yy felsefesinin inanç ve ahlak ilişkisine kadar devam ediyor. <br> Hristiyan felsefesinin genel özellikleri, islam felsefesinin genel özellikleri, hristiyan felsefesinin; dönemleri, problemleri; tümeller, tanrının varlığı. İslam'dan kişilerin görüşleri deftere yazdıklarımızdan. Defterden yazdıklarımıza çalış. </p>
+            </div>
+        </div>
+        <div class="overlay" id="overlay-biyoloji">
+            <div class="modal" id="modal-biyoloji">
+                <span class="close-btn" onclick="closeModal('biyoloji')">&times;</span>
+                <h1 class="title2 bolder">Biyoloji Sınavı</h1>
+                <p class="body1"><strong>Tarih:</strong> 18.12.2023</p>
+                <p class="body1">Sindirim sistemine kadar, duyu organları ve iskelet kas sistemi, kemik isim ve örnekleri. Kemiğin kalınlaşmasını sağlayan besleyen kanal. Kas dokular.</p>
+            </div>
+        </div>
+        <div class="overlay" id="overlay-din">
+            <div class="modal" id="modal-din">
+                <span class="close-btn" onclick="closeModal('din')">&times;</span>
+                <h1 class="title2 bolder">Din Sınavı</h1>
+                <p class="body1"><strong>Tarih:</strong> 18.12.2023</p>
+                <p class="body1">Sayfa 54'e kadar.</p>
+            </div>
+        </div>
+        <div class="overlay" id="overlay-edebiyat">
+            <div class="modal" id="modal-edebiyat">
+                <span class="close-btn" onclick="closeModal('edebiyat')">&times;</span>
+                <h1 class="title2 bolder">Türk Dili ve Edebiyat Sınavı</h1>
+                <p class="body1"><strong>Tarih:</strong> 19.12.2023</p>
+                <p class="body1">Murabba şiirinden; kafiye, kafiye şeması, redif, nazım biçimi, ölçüsü, manevi ve milli katkısı, söz sanatlarını bulmak.</p>
+            </div>
         </div>
     </div>
 
-    <div class="overlay" id="overlay-felsefe">
-        <div class="modal" id="modal-felsefe">
-            <span class="close-btn" onclick="closeModal('felsefe')">&times;</span>
-            <h1 class="title2 bolder">Felsefe Sınavı</h1>
-            <p class="body1"><strong>Tarih:</strong> 19.12.2023</p>
-            <p class="body1">Kendini tanımlayan bir filozof sözü, M.Ö 6. yy - M.S 2. yy felsefesinin ayırt edici özelliklerinden başlıyor, M.S 2. yy - M.S 15. yy felsefesinin inanç ve ahlak ilişkisine kadar devam ediyor. <br> Hristiyan felsefesinin genel özellikleri, islam felsefesinin genel özellikleri, hristiyan felsefesinin; dönemleri, problemleri; tümeller, tanrının varlığı. İslam'dan kişilerin görüşleri deftere yazdıklarımızdan. Defterden yazdıklarımıza çalış. </p>
-        </div>
+    <div id="img">
+        <h1>Bu cihaz sitemizde desteklenmiyor.</h1>
+        <img src="berkvemustafa.jpg" alt="300'den küçük Desteklemiyoruz.">
+        <p>Fakir misin? 300px den küçük ekran ne</p>
     </div>
-    <div class="overlay" id="overlay-biyoloji">
-        <div class="modal" id="modal-biyoloj,">
-            <span class="close-btn" onclick="closeModal('biyoloji')">&times;</span>
-            <h1 class="title2 bolder">Biyoloji Sınavı</h1>
-            <p class="body1"><strong>Tarih:</strong> 18.12.2023</p>
-            <p class="body1">Sindirim sistemine kadar, duyu organları ve iskelet kas sistemi, kemik isim ve örnekleri. Kemiğin kalınlaşmasını sağlayan besleyen kanal. Kas dokular.</p>
-        </div>
-    </div>
-
-
     <script>
         const odevGoruntuleBtns = document.querySelectorAll('.odev-goruntule-btn');
 
