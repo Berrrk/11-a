@@ -83,18 +83,26 @@
     color: var(--main-text-color);
 }
 
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--main-text-color);
     font-family: var(--main-fontfamily);
-    background: var(--main-bg-color);
+    background-image: url('B\ -\ Cyan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     text-align: center;
 }
 
+.text {
+    color: #78bff1;
+    text-shadow: 0px 0px 50px white;
+}
+
 header, header p, header h1 {
-    background-color: var(--primary-other-color);
+    background-color: rgb(12, 63, 63);
     padding: 15px 0;
 }
 
@@ -106,6 +114,7 @@ section#odevler {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    color: white;
 }
 
 #odev_content {
@@ -121,7 +130,6 @@ section#odevler {
 
 #logo {
     margin-bottom: 5vh;
-    background-color: var(--primary-other-color);
     color: #090909;
 }
 
@@ -135,19 +143,20 @@ section#odevler {
     width: 260px;
     min-height: 200px;
     height: auto;
-    border: 1px solid black;
-    background-color: var(--primary-color);
+    border: 1px solid cyan;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 100px cyan;
 }
 
 .odev h1, .odev p, .odev a {
     margin: 15px;
-    background-color: var(--primary-color);
 }
 
 .odev a {
     text-decoration: none;
-    color: var(--text-color-secondary);
-    background-color: var(--primary-other-color);
+    color: black;
+    background-color: #035f5f;
     padding: 15px 30px;
     border-radius: 25px;
     border: 1px dotted black;
